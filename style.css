@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Shantell+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #1a237e;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  gap: 1.4rem;
+  min-height: 100vh;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.game {
+  text-align: center;
+  color: #212121;
+}
+.game_title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 360px) {
+  .game_title {
+    font-size: 3.8rem;
+    padding-bottom: 1.5rem;
+  }
+}
+.game_status {
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+}
+@media screen and (min-width: 360px) {
+  .game_status {
+    padding-bottom: 2rem;
+  }
+}
+.game_board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: auto;
+  width: 220px;
+}
+@media screen and (min-width: 768px) {
+  .game_board {
+    width: 300px;
+  }
+}
+.game_cell {
+  width: 74px;
+  height: 74px;
+  border: 2px solid #414141;
+  font-family: "Shantell Sans", cursive;
+  font-size: 2.8rem;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+.game_cell:nth-child(1), .game_cell:nth-child(2), .game_cell:nth-child(3) {
+  border-top: none;
+}
+.game_cell:nth-child(1), .game_cell:nth-child(4), .game_cell:nth-child(7) {
+  border-left: none;
+}
+.game_cell:nth-child(3), .game_cell:nth-child(6), .game_cell:nth-child(9) {
+  border-right: none;
+}
+.game_cell:nth-child(7), .game_cell:nth-child(8), .game_cell:nth-child(9) {
+  border-bottom: none;
+}
+@media screen and (min-width: 768px) {
+  .game_cell {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 3.8rem;
+  }
+}
+.game_btn {
+  width: 150px;
+  line-height: 34px;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-size: inherit;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.game_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (min-width: 360px) {
+  .game_btn {
+    margin-top: 4rem;
+  }
+}
+
+.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  color: #212121;
+  font-size: 0.8em;
+}/*# sourceMappingURL=style.css.map */
